@@ -1,21 +1,13 @@
 import React from "react";
 
-import logo from "../../images/logo.svg";
+import Default from "../templates/Default";
+
 import user1 from "../../images/placeholders/user-1.jpg";
 import post3 from "../../images/placeholders/post-3.jpg";
 
 export default function UserPost() {
   return (
-    <div className="wrapper">
-      <div className="app-header">
-        <div className="app-header__logo">
-          <img src={logo} className="responsive" alt="" />
-        </div>
-        <div className="app-header__menu">
-          <i className="fa fa-bars"></i>
-        </div>
-      </div>
-
+    <Default>
       <div className="user-post">
         <h2 className="user-post__post-title">Usando React como SPA</h2>
         <div className="user-post__post-date">
@@ -41,8 +33,6 @@ export default function UserPost() {
           section 1.10.32.
         </div>
       </div>
-
-      <div className="app-footer">Módulo React :: Full Stack Development</div>
-    </div>
+    </Default>
   );
 }

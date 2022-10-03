@@ -1,22 +1,14 @@
 import React from "react";
 
-import logo from "../../images/logo.svg";
+import Default from "../templates/Default";
+
 import user1 from "../../images/placeholders/user-1.jpg";
 import user2 from "../../images/placeholders/user-2.jpg";
 import user3 from "../../images/placeholders/user-3.jpg";
 
 export default function Users() {
   return (
-    <div className="wrapper">
-      <div className="app-header">
-        <div className="app-header__logo">
-          <img src={logo} className="responsive" alt="" />
-        </div>
-        <div className="app-header__menu">
-          <i className="fa fa-bars"></i>
-        </div>
-      </div>
-
+    <Default>
       <div className="users">
         <h1>Users</h1>
 
@@ -41,8 +33,6 @@ export default function Users() {
           </a>
         </div>
       </div>
-
-      <div className="app-footer">Módulo React :: Full Stack Development</div>
-    </div>
+    </Default>
   );
 }
