@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import CircularProgress from "@mui/material/CircularProgress";
 
 import Default from "../templates/Default";
 import UserBio from "../molecules/UserBio";
 import PostListWrapper from "../molecules/PostListWrapper";
+import AppLoading from "../organisms/AppLoading";
 
 export default function UserBlog() {
   const { userId } = useParams();
@@ -25,7 +25,7 @@ export default function UserBlog() {
   }, [userId]);
 
   return isLoading ? (
-    <CircularProgress />
+    <AppLoading />
   ) : (
     <Default>
       <div className="user-blog">
